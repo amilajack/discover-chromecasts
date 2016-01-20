@@ -2,7 +2,15 @@
   "name": "discover-chromecasts",
   "version": "0.0.0",
   "description": "Discover/detect all Chromecast devices on a network.",
+  "author": "Swinburne Software Innovation Lab",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssilab/discover-chromecasts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssilab/discover-chromecasts/issues"
+  },
   "main": "./index.js",
   "dependencies": {
     "multicast-dns": "4.0.1"
@@ -10,5 +18,17 @@
   "devDependencies": {},
   "engines": {
     "node": ">= 4"
-  }
+  },
+  "keywords": [
+    "chromecast",
+    "cast",
+    "multiple",
+    "network",
+    "local",
+    "device",
+    "hardware",
+    "discover",
+    "detect",
+    "scan"
+  ]
 }

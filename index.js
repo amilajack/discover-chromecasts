@@ -2,14 +2,6 @@
 
 const mdns = require("multicast-dns");
 
-let defaults = {
-  timeout: 10000,
-  serviceName: "_googlecast._tcp.local",
-  serviceType: "PTR",
-  mdns: {},
-  count: 10
-};
-
 module.exports = (opts, cb) => {
   let devices = [];
 
@@ -18,7 +10,13 @@ module.exports = (opts, cb) => {
     opts = {};
   }
 
-  opts = Object.assign({}, defaults, opts);
+  opts = Object.assign({
+    timeout: 10000,
+    serviceName: "_googlecast._tcp.local",
+    serviceType: "PTR",
+    mdns: {},
+    count: 10
+  }, opts);
 
   let timer = setTimeout(() => {
     close();
