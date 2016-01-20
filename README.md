@@ -12,7 +12,20 @@ $ npm install discover-chromecasts
 
 ## Usage
 
-More details coming soon.
+Example:
+
+```javascript
+import discoverChromecasts from "discover-chromecasts";
+
+discoverChromecasts({ timeout: 5000 })
+.then(chromecasts => {
+  chromecasts.forEach(chromecast => {
+    console.log(chromecast);
+  });
+}).catch(err => {
+  console.error(err.message);
+});
+```
 
 ## Disclaimer
 
