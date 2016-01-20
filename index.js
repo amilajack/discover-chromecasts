@@ -1,8 +1,9 @@
 "use strict";
 
 const mdns = require("multicast-dns");
+const pify = require("pify");
 
-module.exports = (opts, cb) => {
+function discoverChromecasts(opts, cb) {
   let devices = [];
 
   if (typeof opts === "function") {
@@ -58,6 +59,6 @@ module.exports = (opts, cb) => {
     m.removeListener("response", onResponse);
     m.destroy();
   }
+}
 
-  return close;
-};
+module.exports = pify(discoverChromecasts);

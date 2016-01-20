@@ -13,7 +13,8 @@
   },
   "main": "./index.js",
   "dependencies": {
-    "multicast-dns": "4.0.1"
+    "multicast-dns": "4.0.1",
+    "pify": "2.3.0"
   },
   "devDependencies": {},
   "engines": {
