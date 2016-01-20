@@ -1,0 +1,14 @@
+{
+  "name": "discover-chromecasts",
+  "version": "0.0.0",
+  "description": "Discover/detect all Chromecast devices on a network.",
+  "license": "MIT",
+  "main": "./index.js",
+  "dependencies": {
+    "multicast-dns": "4.0.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 4"
+  }
+}
