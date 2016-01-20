@@ -1,4 +1,4 @@
-# discover-chromecasts
+# discover-chromecasts [![NPM version](http://img.shields.io/npm/v/discover-chromecasts.svg?style=flat-square)](https://www.npmjs.org/package/discover-chromecasts)
 
 Discover/detect all Chromecast devices on a network.
 
