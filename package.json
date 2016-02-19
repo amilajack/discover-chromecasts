@@ -1,6 +1,6 @@
 {
   "name": "discover-chromecasts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discover/detect all Chromecast devices on a network.",
   "author": "DSTIL",
   "license": "MIT",
